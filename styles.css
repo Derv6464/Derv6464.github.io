@@ -25,6 +25,7 @@ h2{
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    mix-blend-mode: screen;
 }
 .top li a:hover{
     background-color: #08B2E3;
@@ -198,4 +199,41 @@ h4{
 h5{
     color:#FF8811;
     font-size: 25px;
+}
+
+.wrapper{
+    height:4vh;
+    display: flex;
+    align-items: top;
+    padding-left: 1%;
+}
+.typing{
+    width: 12ch;
+    animation: typing 2s steps(12), blink .5s step-end infinite alternate;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 2em;
+    color: white;
+}
+
+@keyframes typing {
+    from {
+        width:0
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }    
+}
+
+.onPage{
+    position: absolute;
+    width: 60px;
+    height:10px;
+    background-color: #08B2E3;
+    padding-top: 20px;
 }
