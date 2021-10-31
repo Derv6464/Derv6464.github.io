@@ -1,5 +1,6 @@
 body {
     background-color: #001021;
+    color:#ffffff;
     font-family: Verdana, Geneva, Tahoma, sans-serif ;
 }
 h1 {
@@ -26,17 +27,36 @@ h2{
     padding: 14px 16px;
     text-decoration: none;
     mix-blend-mode: screen;
+    font-size: 20px;
 }
-.top li a:hover{
-    background-color: #08B2E3;
-    
+/*
+.nav-text:hover{
+    position: absolute;
+    left: 0%;
+    top: auto;
+    right: 0%;
+    bottom: 0%;
+    display: inline-block;
+    height: 11px;
+    background-color: #F58A07;
+}*/
+
+.contain:hover{
+    position: absolute;
+    left: 0%;
+    top: auto;
+    right: 0%;
+    bottom: 0%;
+    display: inline-block;
+    height: 11px;
+    background-color: #F58A07;
 }
+
 
 .top .active{
     color: #C1F7DC;
     text-decoration: underline;
 }
-
 
 .top li.dropdown {
     display: inline-block;
@@ -59,7 +79,9 @@ h2{
     text-align: left;
   }
   
-.top .dropdown-content a:hover {background-color: #08B2E3;}
+.top .dropdown-content a:hover {
+    background-color: #08B2E3;
+}
   
 .top .dropdown:hover .dropdown-content {
     display: block;
@@ -129,6 +151,9 @@ h2{
     color: #000000;
 }
 
+.project{
+    padding-left: 1%;
+}
 .project .title{
     color:#F58A07;
     font-size: 60px;
@@ -155,7 +180,7 @@ h2{
 .container .titleCard{
     position: absolute;
     top: 0%;
-    color: #FF8811;
+    color: #F58A07;
     width: 90%;
     height:99%;
     border-radius: 25px;
@@ -197,7 +222,7 @@ h4{
 }
 
 h5{
-    color:#FF8811;
+    color:#F58A07;
     font-size: 25px;
 }
 
@@ -205,11 +230,11 @@ h5{
     height:4vh;
     display: flex;
     align-items: top;
-    padding-left: 1%;
+    padding-left: 2%;
 }
 .typing{
-    width: 12ch;
-    animation: typing 2s steps(12), blink .5s step-end infinite alternate;
+    width: 14ch;
+    animation: typing 2s steps(14), blink .5s step-end infinite alternate;
     overflow: hidden;
     white-space: nowrap;
     border-right: 3px solid;
@@ -232,8 +257,27 @@ h5{
 
 .onPage{
     position: absolute;
-    width: 60px;
-    height:10px;
+    left: 0%;
+    top: auto;
+    right: 0%;
+    bottom: 0%;
+    display: inline-block;
+    height: 11px;
     background-color: #08B2E3;
-    padding-top: 20px;
+}
+
+.contain{
+    display: inline-block;
+    position: relative;
+}
+
+.nav-text{
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    line-height: 20px;
+    text-decoration: none;
+    color:#ffffff;
 }
