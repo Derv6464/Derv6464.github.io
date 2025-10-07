@@ -1,13 +1,16 @@
+import Project from "./Project";
+
+{/* Fuecoco Imgs*/}
 import render from "../assets/untitled.png";
 import real from "../assets/IMG_7952.jpg";
-import Project from "./Project";
-import move from "../assets/MoveVid.mp4";
-import arm from "../assets/ArmVid.mp4";
-import fire from "../assets/FireVid.mp4";
+{/* Mach25 Imgs */}
 import rocket1 from "../assets/rocket1.jpg";
 import rocket2 from "../assets/rocket2.JPG";
 import dep from "../assets/dep.jpeg";
 import ebay from "../assets/ebay.jpeg";
+{/* Magik Imgs */}
+import pcb_front from "../assets/pcb_front.png";
+import rig_proto from "../assets/rig_proto.png";
 
 function Projects() {
   const projects = [
@@ -37,8 +40,22 @@ function Projects() {
         "It used 3 DC motors for the legs & tail, as well as two servos for the arms. This is controlled by a motorboard with a Raspberry Pi Pico W. This is controller over Bluetooth using a second Pico W connted to a analog stick & buttons for control. Additionally, it has a NeoPixel strip for a fire effect, as will as displaying error codes for debugging on the fly."
     ],
       images: [render, real],
-       videos: [move, arm, fire],
+       videos: ["/videos/MoveVid.mp4", "/videos/ArmVid.mp4", "/videos/FireVid.mp4"],
         github: "https://github.com/Derv6464/RobotPokemon",
+    },
+    {
+      title: "Magik - Rocket Flight Computer",
+      description: [
+        "Wrote code & designed PCB for a rocket flight computer for my college final year project."
+      ],
+      details:
+        ["This was built as a final year project for college, as well as to create a flight computer for ULAS HiPR.",
+        "I used KiCad to design the PCB, which uses sensors commonly used in rocketry, as well as a Raspberry Pi Pico for the logic. The flight computer was coded in C++ and used FreeRTOS to manage tasks. Python was used for mocking and testing, as well as graphing results. ",
+        "I made an accompanying ground station in Python, which after some modificiation was used by ULAS HiPR at Mach25 for CanSat telemetry.",
+        "The full project report, as well as all code and PCB files can be found on my GitHub"
+    ],
+      images: [pcb_front, rig_proto],
+        github: "https://github.com/Derv6464/Magik/",
     },
   ];
 
