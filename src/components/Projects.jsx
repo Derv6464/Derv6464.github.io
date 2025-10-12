@@ -3,6 +3,7 @@ import Project from "./Project";
 {/* Fuecoco Imgs*/}
 import render from "../assets/untitled.png";
 import real from "../assets/IMG_7952.jpg";
+import internals from "../assets/IMG_7811.jpeg";
 {/* Mach25 Imgs */}
 import rocket1 from "../assets/rocket1.jpg";
 import rocket2 from "../assets/rocket2.JPG";
@@ -37,9 +38,10 @@ function Projects() {
       details:
         ["This robot was for a college project, as well as Dublin Comic Con.",
         "It was designed in Fusion 360 and Blender, and printed on an Ender 3 v2. It took about 40hrs of sanding, priming and painting to get a smooth finish. ",
-        "It used 3 DC motors for the legs & tail, as well as two servos for the arms. This is controlled by a motorboard with a Raspberry Pi Pico W. This is controller over Bluetooth using a second Pico W connted to a analog stick & buttons for control. Additionally, it has a NeoPixel strip for a fire effect, as will as displaying error codes for debugging on the fly."
+        "It used 3 DC motors for the legs & tail, as well as two servos for the arms. This is controlled by a motorboard with a Raspberry Pi Pico W. This is controller over Bluetooth using a second Pico W connted to a analog stick & buttons for control. Additionally, it has a NeoPixel strip for a fire effect, as will as displaying error codes for debugging on the fly.",
+        "Additionally, I made the face detachable with magnets, this allows me to easily access the electronics inside"
     ],
-      images: [render, real],
+      images: [render, real, internals],
        videos: ["/videos/MoveVid.mp4", "/videos/ArmVid.mp4", "/videos/FireVid.mp4"],
         github: "https://github.com/Derv6464/RobotPokemon",
     },
@@ -62,7 +64,7 @@ function Projects() {
   return (
     <div style={{ textAlign: "left" }}>
       <h1 id="projects">Projects</h1>
-      <div className="grid">
+       <div className="projects-grid">
         {projects.map((proj, index) => (
           <Project
             key={index}
