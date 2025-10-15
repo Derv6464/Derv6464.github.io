@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar";
 import Intro from './components/Intro';
 import Projects from './components/Projects';
 import Work from './components/Work';
+import About from './components/About';
 
 function App() {
 
@@ -16,8 +17,15 @@ function App() {
       <Intro />
 
       <br></br>
+      <section>
       <Projects />
+      </section>
+      <section>
       <Work />
+      </section>
+         <section>
+      <About />
+      </section>
     </>
   )
 }

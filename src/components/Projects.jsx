@@ -19,7 +19,7 @@ function Projects() {
       title: "Mach25 - ULAS HiPR",
       description: [
         "Project Manager & Head of Avinoics for Mach25 , a student-led rocketry project.",
-        "Achieved 2nd place on our category",
+        "Achieved 2nd place on our category, with an apogee of 2,273m.",
       ],
       details:[
         "Mach25 is a student rocketry competition taking place in Machrihanish, Scotland. I was project manager of the team of 15 people, as well as head of avinoics. We built Macha, a 1.92m tall rocket, carrying our deployable cansat, which mapped safe and unsafe landing zones during descent. Macha reached an apogee of 2,273m.",
@@ -61,7 +61,9 @@ function Projects() {
     },
   ];
 
+
   return (
+    <>
     <div style={{ textAlign: "left" }}>
       <h1 id="projects">Projects</h1>
        <div className="projects-grid">
@@ -78,7 +80,15 @@ function Projects() {
           />
         ))}
       </div>
+      </div>
+    <div style={{ textAlign: "center" }}>
+      <button className="outline" style={{ marginTop: "0.75rem" }}>
+        <a href="https://dervlagargan.notion.site/All-My-Projects-4a1257d6ca6f4c3a9411ef3fd6de0455?pvs=74">
+            Check out all my projects on Notion!
+        </a>
+      </button>
     </div>
+    </>
   );
 }
 
